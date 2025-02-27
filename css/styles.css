@@ -29,12 +29,12 @@
     max-width: 100%;
     height: auto;
     max-height: 300px; /* Adjust this value as needed */
-    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    object-fit: cover;
 }
 
 .virtual-assistant-img {
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Adjust this value as needed */
+    max-height: 250px; /* Adjusted to be smaller */
     object-fit: cover;
 } 
