@@ -1,0 +1,40 @@
+.repository-section {
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.repository-section h3 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.repository-section .row {
+    margin-bottom: 20px;
+}
+
+.repository-section h3 a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.repository-section h3 a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust this value as needed */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+.virtual-assistant-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px; /* Adjust this value as needed */
+    object-fit: cover;
+} 
