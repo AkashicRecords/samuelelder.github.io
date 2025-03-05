@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Elder - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            margin: 0;
+            color: #2c3e50;
+            font-size: 36px;
+        }
+        
+        .header h2 {
+            margin: 10px 0;
+            font-weight: normal;
+            color: #3498db;
+        }
+        
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info p {
+            margin: 5px 0;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: #2c3e50;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .experience-header, .education-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .company, .school, .project-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .job-title {
+            font-style: italic;
+            color: #3498db;
+        }
+        
+        .date {
+            color: #7f8c8d;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-category {
+            flex: 1 1 45%;
+            margin-bottom: 15px;
+        }
+        
+        .skill-category h4 {
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        
+        .skill-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        .skill-item {
+            margin-bottom: 3px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .skill-name {
+            font-weight: normal;
+        }
+        
+        .skill-years {
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        .print-button {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .print-button button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .print-button button:hover {
+            background-color: #2980b9;
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+            
+            body {
+                font-size: 12px;
+            }
+            
+            .container {
+                padding: 0;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .header h2 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="print-button">
+            <button onclick="window.print()">Print/Save as PDF</button>
+            <a href="javascript:void(0)" onclick="generatePDF()" style="margin-left: 10px; background-color: #27ae60; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; text-decoration: none; display: inline-block;">Download as PDF</a>
+            <a href="index.html" style="margin-left: 10px; background-color: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 16px; text-decoration: none; display: inline-block;">Back to Portfolio</a>
+        </div>
+        
+        <div class="header">
+            <h1>SAMUEL ELDER</h1>
+            <h2>Senior Test Architect & AI/ML Testing Specialist</h2>
+        </div>
+        
+        <div class="contact-info">
+            <p>
+                <a href="mailto:samueloelder@gmail.com">samueloelder@gmail.com</a> |
+                <a href="https://github.com/AkashicRecords" target="_blank">GitHub</a> |
+                <a href="https://www.linkedin.com/in/samuel-elder/" target="_blank">LinkedIn</a>
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">PROFESSIONAL SUMMARY</h3>
+            <p>
+                Experienced Test Architect with 15+ years of expertise in test automation, quality assurance, and AI/ML validation. Specialized in designing test frameworks for complex systems including computer vision, AI applications, and cloud infrastructure. Skilled in Python, JavaScript, C#, and various testing frameworks. Certified Project Management Professional (PMP) and ScrumMaster (CSM) with a proven track record of implementing Testing Centers of Excellence and leading cross-functional teams.
+            </p>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">PROFESSIONAL EXPERIENCE</h3>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Active Prospect, Inc.</span>
+                    <span class="date">Feb 2021 – Jan 2023</span>
+                </div>
+                <div class="job-title">Senior QA Automation Engineer</div>
+                <ul>
+                    <li>Architected and implemented enterprise-grade BDD test frameworks utilizing Cucumber, JavaScript, Puppeteer, and Cypress, resulting in 70% faster test execution and 90% test coverage.</li>
+                    <li>Pioneered serverless test automation in AWS, leveraging Lambda functions and S3 storage to reduce infrastructure costs by 40%.</li>
+                    <li>Engineered high-performance API testing solutions for microservices, enabling real-time validation and improving system reliability by 35%.</li>
+                    <li>Established a QA Center of Excellence with standardized processes, metrics, and continuous improvement practices.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Alitheon LLC</span>
+                    <span class="date">Jul 2018 – Aug 2019</span>
+                </div>
+                <div class="job-title">Senior Software Development Engineer in Test</div>
+                <ul>
+                    <li>Designed and implemented a robust BDD framework for mission-critical computer vision microservices, increasing test coverage by 65%.</li>
+                    <li>Orchestrated cloud-native test environments using AWS EC2 and Kubernetes, enabling dynamic scaling and reducing test execution time by 50%.</li>
+                    <li>Streamlined CI/CD pipelines with automated validation for AI-driven products, decreasing deployment failures by 80% and accelerating release cycles.</li>
+                    <li>Developed specialized test methodologies for computer vision and AI/ML systems, ensuring reliable validation of image recognition algorithms.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Verizon Wireless</span>
+                    <span class="date">Jun 2015 – Jan 2018</span>
+                </div>
+                <div class="job-title">Senior Software Development Engineer in Test</div>
+                <ul>
+                    <li>Spearheaded the implementation of a comprehensive Cucumber BDD framework that transformed test automation for enterprise-scale web applications, reducing regression testing time by 60%.</li>
+                    <li>Engineered cross-platform test solutions integrating Selenium with AWS services, enabling parallel test execution and improving test reliability by 75%.</li>
+                    <li>Developed sophisticated API testing strategies for microservices architecture, ensuring seamless integration across complex systems.</li>
+                    <li>Implemented a Testing Center of Excellence that standardized quality processes and metrics across multiple development teams.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span class="company">Microsoft</span>
+                    <span class="date">Jul 2006 – Dec 2013</span>
+                </div>
+                <div class="job-title">Software Development Engineer in Test</div>
+                <ul>
+                    <li>Led the development of an innovative BDD framework using SpecFlow and C# that became the standard for Xbox One feature testing, improving test efficiency by 40%.</li>
+                    <li>Served as Scrum Master while contributing to cutting-edge computer vision projects, implementing automated test solutions that reduced manual testing effort by 70%.</li>
+                    <li>Designed and managed enterprise-scale test environments in Azure, optimizing cloud resource utilization and enabling continuous validation of complex data pipelines.</li>
+                    <li>Contributed to Xbox Testing Center of Excellence, developing specialized test methodologies for gaming platforms, AR/VR applications, and cloud services.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">EDUCATION & CERTIFICATIONS</h3>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <span class="school">University of Texas at Austin</span>
+                    <span class="date">Current</span>
+                </div>
+                <div>Post Graduate Program in Artificial Intelligence and Machine Learning: Business Applications</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <span class="school">Dover Business College (now Berkeley College)</span>
+                    <span class="date">2001</span>
+                </div>
+                <div>Information Technology Management (GPA: 3.95)</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <span class="school">Bellevue Community College</span>
+                    <span class="date">Completed</span>
+                </div>
+                <div>C# for Testers</div>
+            </div>
+            
+            <div class="education-item">
+                <div class="education-header">
+                    <span class="school">Professional Certifications</span>
+                </div>
+                <ul>
+                    <li>Project Management Professional (PMP)</li>
+                    <li>Certified ScrumMaster® (CSM®)</li>
+                    <li>CompTIA A+ Certification</li>
+                    <li>Cisco Certified Network Associate (CCNA)</li>
+                    <li>CompTIA Network+ Certification</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">TECHNICAL SKILLS</h3>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">Python</span> <span class="skill-years">15 years</span></li>
+                        <li class="skill-item"><span class="skill-name">C#</span> <span class="skill-years">10 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Java</span> <span class="skill-years">7 years</span></li>
+                        <li class="skill-item"><span class="skill-name">JavaScript</span> <span class="skill-years">5 years</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Testing Frameworks</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">BDD/Gherkin</span> <span class="skill-years">12 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Selenium</span> <span class="skill-years">12 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Cucumber</span> <span class="skill-years">8 years</span></li>
+                        <li class="skill-item"><span class="skill-name">TestNG</span> <span class="skill-years">7 years</span></li>
+                        <li class="skill-item"><span class="skill-name">SpecFlow</span> <span class="skill-years">7 years</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Cloud & Infrastructure</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">AWS</span> <span class="skill-years">8 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Azure</span> <span class="skill-years">7 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Docker</span> <span class="skill-years">5 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Kubernetes</span> <span class="skill-years">2 years</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Database Technologies</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">SQL Databases</span> <span class="skill-years">12 years</span></li>
+                        <li class="skill-item"><span class="skill-name">NoSQL Databases</span> <span class="skill-years">8 years</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>CMS & CRM Systems</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">WordPress</span> <span class="skill-years">10 years</span></li>
+                        <li class="skill-item"><span class="skill-name">CRM Technologies</span> <span class="skill-years">7 years</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h4>Specialized Skills</h4>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">Computer Vision Testing</span> <span class="skill-years">8 years</span></li>
+                        <li class="skill-item"><span class="skill-name">AI/ML Testing</span> <span class="skill-years">6 years</span></li>
+                        <li class="skill-item"><span class="skill-name">AR/VR Testing</span> <span class="skill-years">3 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Testing Center of Excellence</span> <span class="skill-years">8 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Project Management</span> <span class="skill-years">10 years</span></li>
+                        <li class="skill-item"><span class="skill-name">Scrum Master</span> <span class="skill-years">7 years</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h3 class="section-title">NOTABLE PROJECTS</h3>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-name">Virtual-Business-Assistant</span>
+                </div>
+                <p>Google workspaces integration that allows AI NLP interactions to give you hands-free control of your entire account through agentic voice interactions with an AI business assistant.</p>
+            </div>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-name">Legion-1of1</span>
+                </div>
+                <p>Personal AI assistant project for task automation and productivity enhancement. Designed to streamline workflows and improve efficiency through intelligent automation.</p>
+            </div>
+            
+            <div class="project-item">
+                <div class="project-header">
+                    <span class="project-name">ReviewTrackersFunWithPython</span>
+                </div>
+                <p>Example of UI testing with Selenium following the Page Object Model design pattern written in Python. Demonstrates best practices in test automation architecture.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Update current year in footer
+        document.addEventListener('DOMContentLoaded', function() {
+            if (document.getElementById('current-year')) {
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            }
+        });
+        
+        // Function to generate and download PDF
+        function generatePDF() {
+            window.print();
+        }
+    </script>
+</body>
+</html> 
